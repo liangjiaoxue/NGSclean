@@ -6,7 +6,7 @@ This pipeline trims the adaptor from the ends of reads, and move plant Ribosomal
 The process is based on two tools Trimmomatic and STAR for trimming and mapping respectively. First of all  
 please make sure how to run these two tool on your system.  
 
-On Sapelo/UGA, it is like this:
+On Sapelo/UGA, it is like this:  
 Trrimmomatic
 ```
 module load ava/jdk1.8.0_20 
@@ -24,10 +24,10 @@ STAR   https://github.com/alexdobin/STAR
 
 
 # 0 Copy the script and generate index file for rRNA sequences
-copy NGSclean directory to your system, for example
-NGSclean=/lustre1/lxue/NGSclean
+copy NGSclean directory to your system, for example  
+NGSclean=/lustre1/lxue/NGSclean  
 
-prepare rRNA reference for STAR
+prepare rRNA reference for STAR  
 '''
 cd $NGSclean
 mkdir rRNA_ref
