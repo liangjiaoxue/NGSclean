@@ -73,7 +73,7 @@ generate shell files
 -s       how to treat the singleton reads:merge, keep , discard
 -q       queue to run the jobs: queue(defualt), inter(run interactive jobs)
 
-'''
+```
 
 python $NGSclean/trim_and_clean.py -d RNAseq_design.txt -t 8  -s merge \
   --run_trimmomatic $trimmoFull --load_trimmo_module $trimmo_module  --adaptor $adaptor  \
@@ -87,7 +87,7 @@ python $NGSclean/trim_and_clean.py -d RNAseq_design.txt -t 8  -s discard -q inte
   --run_trimmomatic $trimmoFull --load_trimmo_module $trimmo_module  --adaptor $adaptor  \
   --run_star $starFull --load_star_module $star_module 
   
- '''
+```
 
 
 
