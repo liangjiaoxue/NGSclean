@@ -57,7 +57,7 @@ more RNAseq_design.txt
 
 #2. Trim and Clean
 
-'''
+```
 cd /lustre1/lxue/RNAseq/01clean
 settings
 NGSclean=/lustre1/lxue/NGSclean
@@ -66,15 +66,14 @@ starFull=/usr/local/apps/star/latest/bin/STAR
 adaptor=/usr/local/apps/trimmomatic/latest/adapters/TruSeq3-PE.fa
 trimmo_module=java/jdk1.8.0_20 
 star_module=java/jdk1.7.0_67
-'''
-
-generate shell files
-
--s       how to treat the singleton reads:merge, keep , discard
--q       queue to run the jobs: queue(defualt), inter(run interactive jobs)
-
 ```
 
+generate shell files  
+
+-s       how to treat the singleton reads:merge, keep , discard  
+-q       queue to run the jobs: queue(defualt), inter(run interactive jobs)  
+
+```
 python $NGSclean/trim_and_clean.py -d RNAseq_design.txt -t 8  -s merge \
   --run_trimmomatic $trimmoFull --load_trimmo_module $trimmo_module  --adaptor $adaptor  \
   --run_star $starFull --load_star_module $star_module 
@@ -86,7 +85,6 @@ python $NGSclean/trim_and_clean.py -d RNAseq_design.txt -t 8  -s keep \
 python $NGSclean/trim_and_clean.py -d RNAseq_design.txt -t 8  -s discard -q inter \
   --run_trimmomatic $trimmoFull --load_trimmo_module $trimmo_module  --adaptor $adaptor  \
   --run_star $starFull --load_star_module $star_module 
-  
 ```
 
 
