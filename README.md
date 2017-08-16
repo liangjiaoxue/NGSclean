@@ -23,7 +23,7 @@ Trimmomatic  http://www.usadellab.org/cms/?page=trimmomatic
 STAR   https://github.com/alexdobin/STAR
 
 
-# 0 Copy the script and generate index file for rRNA sequences
+# 0. Copy the script and generate index file for rRNA sequences
 copy NGSclean directory to your system, for example  
 NGSclean=/lustre1/lxue/NGSclean  
 
