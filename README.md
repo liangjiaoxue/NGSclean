@@ -8,23 +8,22 @@ please make sure how to run these two tool on your system.
 
 On Sapelo/UGA, it is like this:
 Trrimmomatic
-'''
+```
 module load ava/jdk1.8.0_20 
 /usr/local/apps/trimmomatic/0.33/trimmomatic-0.33.jar 
-'''
+```
 STAR
-'''
+```
 modle load java/jdk1.7.0_67
 /usr/local/apps/star/latest/bin/STAR
-'''
-
+```
 
 Dependency:
 Trimmomatic  http://www.usadellab.org/cms/?page=trimmomatic
 STAR   https://github.com/alexdobin/STAR
 
 
-#0 Copy the script and generate index file for rRNA sequences
+# 0 Copy the script and generate index file for rRNA sequences
 copy NGSclean directory to your system, for example
 NGSclean=/lustre1/lxue/NGSclean
 
@@ -43,7 +42,7 @@ module load java/jdk1.7.0_67
 
 
 
-#1. Prepare design file
+# 1. Prepare design file
 '''
 cd /lustre1/lxue/RNAseq/01clean
 NGSclean=/lustre1/lxue/NGSclean
@@ -53,9 +52,7 @@ Check the design file. Revise the sample names if necessary, it will be used as 
 more RNAseq_design.txt 
 '''
 
-
-
-#2. Trim and Clean
+# 2. Trim and Clean
 
 ```
 cd /lustre1/lxue/RNAseq/01clean
