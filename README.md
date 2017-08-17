@@ -24,7 +24,7 @@ Trimmomatic  http://www.usadellab.org/cms/?page=trimmomatic
 STAR   https://github.com/alexdobin/STAR
 
 
-# 0. Copy the scripts and generate index file for rRNA sequences  
+## 0. Copy the scripts and generate index file for rRNA sequences  
 copy NGSclean directory to your system, for example  
 /lustre1/lxue/NGSclean  
  
@@ -46,7 +46,7 @@ Keep '--genomeDir rRNA_ref'  as it is change 'rRNA_only_NR.fas' if a new referen
 
 
 
-# 1. Prepare design file  
+## 1. Prepare design file  
 ```
 cd /lustre1/lxue/RNAseq/01clean  
 NGSclean=/lustre1/lxue/NGSclean  
@@ -56,7 +56,7 @@ Check the design file. Revise the sample names if necessary, it will be used as 
 more RNAseq_design.txt 
 ```
 
-# 2. Trim and Clean
+## 2. Trim and Clean
 
 ```
 cd /lustre1/lxue/RNAseq/01clean
