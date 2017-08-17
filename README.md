@@ -5,7 +5,7 @@ A pipeline to trim the reads and remove ribosomal RNA from RNA-Seq data
 This pipeline trims the adaptor from the ends of reads, and move plant Ribosomal reads from RNAseq reads.  (This tool also works for data from animal species, when corresponding rRNA sequences is provide.)
 The process is based on two tools, Trimmomatic and STAR for trimming and mapping respectively. 
 
-First of all please make sure how to run these two tools on your system.  
+First of all please make sure how to run these two tools on your system.   
 
 On Sapelo/UGA, it is like this:  
 Trimmomatic
