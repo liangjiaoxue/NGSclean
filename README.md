@@ -28,7 +28,7 @@ copy NGSclean directory to your system, for example
 NGSclean=/lustre1/lxue/NGSclean  
 
 prepare rRNA reference for STAR  
-'''
+```
 cd $NGSclean
 mkdir rRNA_ref
 module load java/jdk1.7.0_67
@@ -38,7 +38,7 @@ module load java/jdk1.7.0_67
   --genomeDir rRNA_ref  \
   --genomeChrBinNbits  5 \
   --genomeFastaFiles rRNA_only_NR.fas  
-'''
+```
 
 
 
@@ -70,6 +70,7 @@ generate shell files
 -s       how to treat the singleton reads:merge, keep , discard  
 -q       queue to run the jobs: queue(defualt), inter(run interactive jobs)  
 
+
 ```
 python $NGSclean/trim_and_clean.py -d RNAseq_design.txt -t 8  -s merge \
   --run_trimmomatic $trimmoFull --load_trimmo_module $trimmo_module  --adaptor $adaptor  \
@@ -83,3 +84,12 @@ python $NGSclean/trim_and_clean.py -d RNAseq_design.txt -t 8  -s discard -q inte
   --run_trimmomatic $trimmoFull --load_trimmo_module $trimmo_module  --adaptor $adaptor  \
   --run_star $starFull --load_star_module $star_module 
 ```
+
+And then run master the shell script to submit the jobs or run them interactively.  
+For example:  
+```
+chmod 750 RNAseq_design.sh
+./RNAseq_design.sh
+```
+
+
