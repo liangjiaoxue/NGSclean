@@ -18,7 +18,7 @@ modle load java/jdk1.7.0_67
 /usr/local/apps/star/latest/bin/STAR
 ```
 
-Dependency:
+Dependency:  
 Trimmomatic  http://www.usadellab.org/cms/?page=trimmomatic  
 STAR   https://github.com/alexdobin/STAR
 
@@ -83,6 +83,3 @@ python $NGSclean/trim_and_clean.py -d RNAseq_design.txt -t 8  -s discard -q inte
   --run_trimmomatic $trimmoFull --load_trimmo_module $trimmo_module  --adaptor $adaptor  \
   --run_star $starFull --load_star_module $star_module 
 ```
-
-
-
