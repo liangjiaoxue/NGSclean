@@ -2,7 +2,7 @@
 A pipeline to trim the reads and remove ribosomal RNA from RNA-Seq data  
 
 
-This pipeline trims the adaptor from the ends of reads, and move plant Ribosomal reads from RNAseq reads.  (This tool also works for )
+This pipeline trims the adaptor from the ends of reads, and move plant Ribosomal reads from RNAseq reads.  (This tool also works for data from animal species, when corresponding rRNA sequences is provide.)
 The process is based on two tools, Trimmomatic and STAR for trimming and mapping respectively. 
 
 First of all please make sure how to run these two tools on your system.  
@@ -40,6 +40,7 @@ module load java/jdk1.7.0_67
   --genomeChrBinNbits  5 \
   --genomeFastaFiles rRNA_only_NR.fas  
 ```
+Keep '--genomeDir rRNA_ref'  as it is change 'rRNA_only_NR.fas' if a new reference file is necessary.
 
 
 
