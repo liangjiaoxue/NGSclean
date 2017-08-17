@@ -89,7 +89,7 @@ python $NGSclean/trim_and_clean.py -d RNAseq_design.txt -t 8  -s discard -q inte
   --run_star $starFull --load_star_module $star_module 
 ```
 
-And then run master the shell script to submit the jobs or run them interactively.  
+And then run the master shell script to submit the jobs or run them interactively.  
 For example:  
 ```
 chmod 750 RNAseq_design.sh
